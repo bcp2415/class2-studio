@@ -16,12 +16,14 @@ import static java.lang.Character.toLowerCase;
 public class CountingCharacters {
     public static void main(String[] args) {
         HashMap<Character, Integer> data = new HashMap<>();
-        //Scanner input = new Scanner(System.in);
-        FileReader fr = new FileReader("C:/Users/bprin/java/java-web-dev-exercises/src/org/launchcode/java/studios/countingcharacters/sample.txt");
-        Scanner inFile = new Scanner(fr);
+        Scanner input = new Scanner(System.in);
+        File myFile = new File("sample.txt");
+        System.out.println(myFile);
+        //FileReader fr = new FileReader(myFile);
+        //Scanner inFile = new Scanner(myFile);
 
         //System.out.println("Enter the sentences you want to analyze: ");
-        String words = inFile.nextLine();
+        /*String words = myFile.nextLine();
 
         //String words = "If the product of two terms is zero then common sense says at least one of the two terms has to be zero to start with. So if you move all the terms over to one side, you can put the quadratics into a form that can be factored allowing that side of the equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
         char[] chars = words.toCharArray();
@@ -48,7 +50,7 @@ public class CountingCharacters {
         for (Map.Entry<Character, Integer> letter : data.entrySet()) {
             System.out.println(letter.getKey() + " = " + letter.getValue());
         }
-
+*/
         // can we sort them, too?
     }
 }
